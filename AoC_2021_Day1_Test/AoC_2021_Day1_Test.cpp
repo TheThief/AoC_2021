@@ -26,13 +26,13 @@ namespace AoC2021Day1Test
 		TEST_METHOD(Part1)
 		{
 			const int expected_test_ouput_1 = 7;
-			Assert::AreEqual(expected_test_ouput_1, part1(ranges::views::all(test_input)));
+			Assert::AreEqual(expected_test_ouput_1, part1(test_input));
 		}
 
 		TEST_METHOD(Part2)
 		{
 			const int expected_test_ouput_2 = 5;
-			Assert::AreEqual(expected_test_ouput_2, part2(ranges::views::all(test_input)));
+			Assert::AreEqual(expected_test_ouput_2, part2(test_input));
 		}
 	};
 }

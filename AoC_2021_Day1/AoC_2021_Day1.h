@@ -2,7 +2,7 @@
 
 #include <range/v3/all.hpp>
 
-int part1(ranges::forward_range auto input)
+int part1(ranges::forward_range auto& input)
 {
 	const auto sliding2 = input | ranges::views::sliding(2);
 	const auto increasing = sliding2 |
@@ -17,15 +17,17 @@ int part1(ranges::forward_range auto input)
 	return ranges::accumulate(increasing, 0);
 }
 
-int part2(ranges::forward_range auto input)
+int part2(ranges::forward_range auto& input)
 {
-	const auto sliding3 = input | ranges::views::sliding(3);
-	const auto sums = sliding3 |
+	const auto sliding4 = input | ranges::views::sliding(4);
+	const auto increasing = sliding4 |
 		ranges::views::transform(
-			[](auto triple)
+			[](auto pair)
 			{
-				return ranges::accumulate(triple, 0);
+				if (pair[3] > pair[0])
+					return 1;
+				return 0;
 			});
 
-	return part1(sums);
+	return ranges::accumulate(increasing, 0);
 }
