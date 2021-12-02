@@ -1,24 +1,26 @@
 #include "CppUnitTest.h"
 
 #include "../AoC_2021_Day1/AoC_2021_Day1.h"
-const int test_input[] =
-{
-	199,
-	200,
-	208,
-	210,
-	200,
-	207,
-	240,
-	269,
-	260,
-	263,
-};
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+using namespace aoc2021::day1;
 
-namespace AoC2021Day1Test
+namespace aoc2021::day1::test
 {
+	const int test_input[] =
+	{
+		199,
+		200,
+		208,
+		210,
+		200,
+		207,
+		240,
+		269,
+		260,
+		263,
+	};
+
 	TEST_CLASS(AoC2021Day1Test)
 	{
 	public:

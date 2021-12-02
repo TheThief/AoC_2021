@@ -9,6 +9,8 @@
 
 #include "AoC_2021_Day1.h"
 
+using namespace aoc2021::day1;
+
 int main()
 {
 	SetConsoleOutputCP(CP_UTF8);
