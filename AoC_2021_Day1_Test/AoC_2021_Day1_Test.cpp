@@ -3,7 +3,6 @@
 #include "../AoC_2021_Day1/AoC_2021_Day1.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-using namespace aoc2021::day1;
 
 namespace aoc2021::day1::test
 {
@@ -21,7 +20,7 @@ namespace aoc2021::day1::test
 		263,
 	};
 
-	TEST_CLASS(AoC2021Day1Test)
+	TEST_CLASS(Test)
 	{
 	public:
 		

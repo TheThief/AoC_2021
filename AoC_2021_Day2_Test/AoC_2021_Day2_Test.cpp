@@ -1,8 +1,8 @@
 #include "CppUnitTest.h"
 
-using namespace Microsoft::VisualStudio::CppUnitTestFramework;
-
 #include "../AoC_2021_Day2/AoC_2021_Day2.h"
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace aoc2021::day2::test
 {
@@ -16,7 +16,7 @@ namespace aoc2021::day2::test
 		forward{ 2 },
 	};
 
-	TEST_CLASS(AoC2021Day1Test)
+	TEST_CLASS(Test)
 	{
 	public:
 
