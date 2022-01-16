@@ -89,11 +89,6 @@
   <ItemGroup>
     <ClCompile Include="AoC_2021_Day2_Test.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AoC_2021_Day2\AoC_2021_Day2.vcxproj">
-      <Project>{f08f2e64-8287-42ab-8811-9ea0a37f6293}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
